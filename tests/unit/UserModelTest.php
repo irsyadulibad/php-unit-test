@@ -11,19 +11,22 @@ class UserModelTest extends TestCase
         $this->model = new User;
     }
 
-    public function testFirstName()
+    /** @test */
+    public function it_can_set_first_name()
     {
         $this->model->setFirstName('Irsyadul');
         $this->assertEquals('Irsyadul', $this->model->getFirstName());
     }
 
-    public function testLastName()
+    /** @test */
+    public function it_can_set_last_name()
     {
         $this->model->setLastName('Ibad');
         $this->assertEquals('Ibad', $this->model->getLastName());
     }
 
-    public function testFullName()
+    /** @test */
+    public function can_get_full_name()
     {
         $this->model->setFirstName('Irsyadul');
         $this->model->setLastName('Ibad');
@@ -32,7 +35,8 @@ class UserModelTest extends TestCase
         $this->assertEquals('Irsyadul Ibad', $fullName);
     }
 
-    public function testEmail()
+    /** @test */
+    public function it_can_set_email()
     {
         $email = 'ahmadirsyadulibad8@gmail.com';
 
@@ -40,7 +44,8 @@ class UserModelTest extends TestCase
         $this->assertEquals($email, $this->model->getEmail());
     }
 
-    public function testFullUserInformation()
+    /** @test */
+    public function it_can_return_valid_user_information()
     {
         $this->model->setFirstName('Irsyadul');
         $this->model->setLastName('Ibad');
