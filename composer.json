@@ -1,0 +1,17 @@
+{
+    "name": "irsyadulibad/learn-php-testing",
+    "authors": [
+        {
+            "name": "irsyadulibad",
+            "email": "ahmadirsyadulibad7@gmail.com"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app"
+        }
+    }
+}
