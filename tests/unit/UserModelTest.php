@@ -5,9 +5,8 @@ use PHPUnit\Framework\TestCase;
 
 class UserModelTest extends TestCase
 {
-    public function __construct()
+    protected function setUp(): void
     {
-        parent::__construct();
         $this->model = new User;
     }
 
