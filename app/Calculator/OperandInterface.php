@@ -1,7 +1,7 @@
 <?php
 namespace App\Calculator;
 
-abstract class OperandInterface
+interface OperandInterface
 {
-    abstract public function calculate();
+    public function calculate();
 }

@@ -3,7 +3,7 @@ namespace App\Calculator;
 
 use App\Calculator\Exceptions\NoOperandException;
 
-class Addition extends OperandInterface
+class Addition implements OperandInterface
 {
     protected $operands = [];
 
