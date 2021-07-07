@@ -3,16 +3,8 @@ namespace App\Calculator;
 
 use App\Calculator\Exceptions\NoOperandException;
 
-class Addition implements OperandInterface
+class Addition extends OperationAbstract implements OperandInterface
 {
-    protected $operands = [];
-
-    public function setOperands(array $operands)
-    {
-        $this->operands = $operands;
-        return $operands;
-    }
-
     public function calculate()
     {
         if(count($this->operands) < 1) {
